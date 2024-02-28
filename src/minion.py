@@ -12,6 +12,6 @@ class Minion(QueueClient):
             result = task.run()
             self.result_queue.put(result)
     
-    if __name__ == "__main__":
-        minion = Minion()
-        minion.run()
+if __name__ == "__main__":
+    minion = Minion()
+    minion.run()
